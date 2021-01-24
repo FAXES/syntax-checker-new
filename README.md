@@ -45,16 +45,18 @@ checkSyntaxString(codeString, language, function(syntaxReturn){
 
 Javascript Example.
 ```js
+const syntaxchecker = require("syntax-checker-new");
 let jscode = `console.log(syntaxReturn);`;
-checkSyntaxString(jscode, "js", function(syntaxReturn){
+syntaxchecker.checkSyntaxString(jscode, "js", function(syntaxReturn){
     console.log(syntaxReturn.passed) // Expected result: true
 });
 ```
 
 PHP Example.
 ```js
+const syntaxchecker = require("syntax-checker-new");
 let phpcode = `<?php echo 'test message; ?>`;
-checkSyntaxString(phpcode, "php", function(syntaxReturn){
+syntaxchecker.checkSyntaxString(phpcode, "php", function(syntaxReturn){
     console.log(syntaxReturn.passed) // Expected result: false (as the quote is not closed)
 });
 ```
@@ -78,16 +80,18 @@ checkSyntaxFile(filePath, language, function(syntaxReturn){
 
 Javascript Example.
 ```js
+const syntaxchecker = require("syntax-checker-new");
 let jspath = `/root/test.js`;
-checkSyntaxFile(jspath, "js", function(syntaxReturn){
+syntaxchecker.checkSyntaxFile(jspath, "js", function(syntaxReturn){
     console.log(syntaxReturn.passed)
 });
 ```
 
 PHP Example.
 ```js
+const syntaxchecker = require("syntax-checker-new");
 let phppath = `/root/test.php`;
-checkSyntaxFile(phppath, "php", function(syntaxReturn){
+syntaxchecker.checkSyntaxFile(phppath, "php", function(syntaxReturn){
     console.log(syntaxReturn.passed)
 });
 ```
