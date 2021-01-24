@@ -15,8 +15,8 @@ Check syntax via string or file!
 - [Perl](#perl)
 - [Lua (needs fixing)](#lua)
 - [Bash (needs fixing)](#bash1)
-- [c](#c-and-c++)
-- [c++](#c-and-c++)
+- [c](#c-and-c)
+- [c++](#c-and-)
 - [js](#javascript)
 
 ---
