@@ -1,6 +1,6 @@
 {
   "name": "syntax-checker-new",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This package is aimed at providing a basic syntax check for many languages (listed below) to ensure correct syntax.",
   "main": "index.js",
   "dependencies": {

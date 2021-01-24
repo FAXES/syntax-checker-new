@@ -13,12 +13,11 @@ function makeid(length) {
     return result;
 }
 
-
-async function checkSyntaxString(string, language, callback) {
+exports.checkSyntaxString = async function(string, language, callback) {
     fileId = makeid();
     string = string || ``;
     language = language || '.php'
-    fs.writeFile(`./files/${fileId}.${language}`, string, 'utf8', (err) => {
+    fs.writeFile(`${__dirname}/files/${fileId}.${language}`, string, 'utf8', (err) => {
         if (err) console.log(err);
     });
 
@@ -115,7 +114,7 @@ async function checkSyntaxString(string, language, callback) {
 }
 
 
-async function checkSyntaxFile(filePath, language, callback) {
+exports.checkSyntaxFile = async function(filePath, language, callback) {
     language = language || '.php'
 
     if(language == 'php') {
