@@ -1,0 +1,1 @@
+This folder is used for uploads of string syntax checks.
